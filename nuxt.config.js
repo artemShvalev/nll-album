@@ -23,9 +23,12 @@ export default {
   },
 
   target: 'static',
-  ssr: false,
   router: {
     base: '/nll-album/'
+  },
+  ssr: false,
+  generate: {
+    fallback: true
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
